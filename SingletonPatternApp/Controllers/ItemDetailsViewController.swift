@@ -23,7 +23,6 @@ class ItemDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         item = items.itemsList![itemIndex]
-//        txtFieldTitle.text = itemTitle
         txtFieldTitle.text = item.title
         txtAreaDescription.text = item.description
         txtAreaDescription.layer.cornerRadius = 10
@@ -33,16 +32,25 @@ class ItemDetailsViewController: UIViewController {
     }
 
     @IBAction func btnUpdateItemAction(_ sender: UIButton) {
-        if let text = txtFieldTitle.text, !text.isEmpty,
-           let description = txtAreaDescription.text, !description.isEmpty{
-            item.title = text
-            item.description = description
+        if let txtTitle = txtFieldTitle.text, !txtTitle.isEmpty,
+           let txtDescription = txtAreaDescription.text, !txtDescription.isEmpty {
+            item.title = txtTitle
+            item.description = txtDescription
             items.itemsList![itemIndex] = item
                       
             navigationController?.popViewController(animated: true)
-        } else{
+        } else if txtFieldTitle.text!.isEmpty && txtAreaDescription.text.isEmpty {
             items.itemsList?.remove(at: itemIndex)
             navigationController?.popViewController(animated: true)
+        } else{
+            showAlert()
         }
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Sorry!", message: "you need to complete the information on the form", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "ok", style: .default)
+        alert.addAction(alertAction)
+        present(alert, animated: true)
     }
 }

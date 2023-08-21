@@ -66,8 +66,6 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func btnLogoutAction(_ sender: UIBarButtonItem) {
-        
-
         let alert = UIAlertController(title: "Sign out", message: "Do you want to sign out?", preferredStyle: .alert)
 
         let logoutAction = UIAlertAction(title: "Log out", style: .default) { action in
