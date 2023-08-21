@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>60426483900-0i2dehlljs5ndak3k2dvshvepsuhgh7o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.60426483900-0i2dehlljs5ndak3k2dvshvepsuhgh7o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrf8Lo_92MyxKnUnHvmsY6ZxJjsEzH8Ew</string>
+	<key>GCM_SENDER_ID</key>
+	<string>60426483900</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mobile-academy.SingletonPatternApp</string>
+	<key>PROJECT_ID</key>
+	<string>singletonapp-483fd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>singletonapp-483fd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:60426483900:ios:cf789d71f4b83986d638b9</string>
+</dict>
+</plist>
